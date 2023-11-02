@@ -66,6 +66,7 @@ import json
 with open('../toteetown.backend/dogInfo.json') as f:
    data = json.load(f)
 
+print(len(data))
 candidate_embeddings = list(map(extract_fn,data))
 
 
